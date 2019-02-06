@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Step 26 create a new layout resource directory, change the resource type to "layout",
+select orientation and the select landscape. Copy the item_movie.xml folder over to the new layout-land file-->
+<!--Step 17 create a custom row layout XML file to visualize the item with the name item_movie and a root element of Relative Layout-->
+<!--Step 18 add an image view and set the ID to ivPoster-->
+<!--Step 19 add a text view and ID it as tvTitle set the text size to 24dp and movie it to the right of the image-->
+<!--Step 20 add  another text view and ID it as tvOverview place it under the title view and add a sample over view to both text views-->
+<!--Stretch stories 1.added text color and text shadow-->
+<!--Stretch stories added background color-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#505050">
+
+    <ImageView
+        android:id="@+id/ivPoster"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/tvOverview"
+        android:layout_width="208dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvTitle"
+        android:textColor="#ffffff"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="-35dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="48dp"
+        android:layout_toEndOf="@+id/ivPoster"
+        tools:text="In a series of escalating encounters, security guard David Dunn uses his supernatural abilities to track Kevin Wendell Crumb, a disturbed man who has twenty-four personalities. Meanwhile, the shadowy presence of Elijah Price emerges as an orchestrator who holds secrets critical to both men." />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="181dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="0dp"
+        android:layout_toEndOf="@+id/ivPoster"
+        android:shadowColor="#2ABFAB"
+        android:shadowDx="3"
+        android:shadowDy="3"
+        android:shadowRadius="4"
+        android:textColor="#ffffff"
+        android:textSize="24sp"
+        tools:text="Glass" />
+
+</RelativeLayout>

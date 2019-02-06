@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Step 30 make a relative layout of the on click page that shows the trailer ratingBar-->
+<!--Step 34 create an api key through the youtube developers page -->
+<!--Step 35 download and add/paste in youtubeAndroidPlayerAPI to your libs folder -->
+<!--Step 36 add youtube playerView to the layout to play youtube movie trailers-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity"
+    android:orientation="vertical"
+    android:background="#505050">
+
+    <com.google.android.youtube.player.YouTubePlayerView
+        android:id="@+id/player"
+        android:layout_width="match_parent"
+        android:layout_height="250dp" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:shadowColor="#2ABFAB"
+        android:shadowDx="3"
+        android:shadowDy="3"
+        android:shadowRadius="4"
+        android:textSize="30sp"
+        tools:text="Glass" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        style="@style/Widget.AppCompat.RatingBar.Indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:isIndicator="true"
+        android:numStars="10"
+        android:rating="8.2" />
+
+    <TextView
+        android:id="@+id/tvOverview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        tools:text="In a series of escalating encounters, security guard David Dunn uses his supernatural abilities to track Kevin Wendell Crumb, a disturbed man who has twenty-four personalities. Meanwhile, the shadowy presence of Elijah Price emerges as an orchestrator who holds secrets critical to both men." />
+</LinearLayout>

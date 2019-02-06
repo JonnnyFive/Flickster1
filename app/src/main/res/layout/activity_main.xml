@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Step 15 changed layout from default constraint to RelativeLayout-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <!--Step 16 add recycler view layout to the design tab and ID it as rvMovies-->
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvMovies"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</RelativeLayout>
