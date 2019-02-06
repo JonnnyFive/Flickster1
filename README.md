@@ -26,7 +26,7 @@ Flix is an app that allows users to browse movies from the [The Movie Database A
 
 ### Notes
 
-The emulator updated and removed my internet request from my manifest. after I put it back the emulator wouldnt run my flickster app. I could not return a Json response but it was working for flix part 1.
+The emulator updated and removed my internet request from my manifest. after I put it back the emulator wouldnt run my flickster app. I could not return a Json response but it was working. I re wrote the code and put comments everywhere. It works this time. I added some text color and background color.
 
 ## Open-source libraries used
 - [Android Async HTTP](https://github.com/loopj/android-async-http) - Simple asynchronous HTTP requests with JSON parsing
